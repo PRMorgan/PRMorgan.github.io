@@ -1,5 +1,11 @@
 alert("Hullo, amigo!");
 
+$(".jstesting").hover(function(){
+  $(this).css("background-color", "yellow");
+  }, function(){
+  $(this).css("background-color", "pink");
+});
+
 document.getElementById("jstest").addEventListener("mouseover", mouseOver);
 document.getElementById("jstest").addEventListener("mouseout", mouseOut);
 
