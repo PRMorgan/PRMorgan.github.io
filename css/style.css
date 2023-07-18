@@ -1,13 +1,7 @@
-.header{
-    font-family: monospace;
-    font-size: 20px;
-}
-
-.bonk{
-    background-color: #3cb8a9;
-    font-family: helvetica;
-    font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+#mainBody {
+    text-align:center;
+    font-family: Helvetica;
+    color:white;
+    font-size: 50px;
+    padding: 5% 20% 5% 20%;
 }
