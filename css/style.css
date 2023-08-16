@@ -14,7 +14,8 @@
     border-radius: 10px;
 }
 
-.flex-container {
+/* Contact page specific stylings */
+.flex-container-contact {
     display: flex;
     font-family: Helvetica;
     color:white;
@@ -25,11 +26,129 @@
     align-items: center;
 }
 
+/* Projects page specific stylings */
+.grid-container-projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap:20px;
+    font-family: Helvetica;
+    color:white;
+    font-size: 35px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.grid-item-project {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    display: inline-block;
+}
+
+li {
+    font-size: 25px;
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
 a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
     color:white;
 }
+
+/**
+    This section is for the Menu Bar at the top of each page.
+*/
+
+.glow-on-hover-menu {
+    font-size: 25px;
+    width: 220px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.glow-on-hover-menu:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.glow-on-hover-menu:active {
+    color: #fff
+}
+
+.glow-on-hover-menu:active:after {
+    background: transparent;
+}
+
+.glow-on-hover-menu:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover-menu:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/**
+    This section is for the buttons on the home page.
+*/
 
 .glow-on-hover {
     font-size: 25px;
