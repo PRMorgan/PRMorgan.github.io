@@ -1,0 +1,5 @@
+Black        #080001
+Light Purple #893D6B
+Black        #040000
+Dark Purple  #502762
+Pink         #D85C6D
