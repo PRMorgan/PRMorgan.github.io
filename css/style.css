@@ -26,7 +26,6 @@
     justify-content: left;
     align-items: center;
     text-shadow: 2px 2px 15px black;
-    /*text-shadow: 1px 1px 5px grey;*/
 }
 
 a:link {
@@ -55,17 +54,20 @@ a:link {
 .grid-item-project {
     font-size: 30px;
     text-align: center;
-    /*text-shadow: 5px 5px 5px black;*/
 }
 .grid-item-project-left {
     font-size: 30px;
-    text-align: right;
-    /*text-shadow: 5px 5px 5px black;*/
+    text-align: justify; /*right*/
+    border-radius: 6%;
+    padding: 1em;
+    backdrop-filter: blur(10px) brightness(0.95);
 }
 .grid-item-project-right {
     font-size: 30px;
-    text-align: left;
-    /*text-shadow: 1px 1px 5px black;*/
+    text-align: justify; /*left*/
+    border-radius: 6%;
+    padding: 1em;
+    backdrop-filter: blur(10px) brightness(0.95);
 }
 
 /** 
