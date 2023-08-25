@@ -4,6 +4,7 @@
     color:white;
     font-size: 50px;
     padding: 5% 20% 1% 20%;
+    text-shadow: 1px 1px 5px black;
 }
 
 .indexButton {
@@ -24,7 +25,19 @@
     padding-right: 20%;
     justify-content: left;
     align-items: center;
+    text-shadow: 2px 2px 15px black;
+    /*text-shadow: 1px 1px 5px grey;*/
 }
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
 
 /* Projects page specific stylings */
 .grid-container-projects {
@@ -37,10 +50,22 @@
     font-size: 35px;
     padding-left: 20%;
     padding-right: 20%;
+    text-shadow: 2px 2px 15px black;
 }
 .grid-item-project {
     font-size: 30px;
     text-align: center;
+    /*text-shadow: 5px 5px 5px black;*/
+}
+.grid-item-project-left {
+    font-size: 30px;
+    text-align: right;
+    /*text-shadow: 5px 5px 5px black;*/
+}
+.grid-item-project-right {
+    font-size: 30px;
+    text-align: left;
+    /*text-shadow: 1px 1px 5px black;*/
 }
 
 /** 
